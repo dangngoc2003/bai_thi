@@ -2,29 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>bai3</title>
+    <title>Câu 3</title>
 </head>
 <body>
+</body>
 <script>
-    let x = +prompt("nhap so x");
-    let sum = 0
-
+    let x=+prompt("Nhập số x vao")
     function sumOfListPrime(x) {
+        let sum = 0;
         for (let i = 2; i <= x; i++) {
-            let flag = true;
-            for (let j = 2; j <= i -1; j++) {
-                if (i % j === 0) {
-                    flag = false;
-                }
-            }
-            if (flag) {
-                sum += i;
+            if (checkPrime(i)){
+                sum+=i
             }
         }
         return sum
     }
+    function checkPrime(i){
+        for (let j=2;j<i-1;j++) {
+            if (i % j === 0) {
+                return false;
+            }
+        }
+        return true
+    }
 
-    document.write(sumOfListPrime(x))
+    document.write("tong so nguyen can tim la :" + sumOfListPrime(x))
 </script>
-</body>
 </html>
