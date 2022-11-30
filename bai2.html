@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    function insertNumberToArray(index, number, arr) {
+        if (index < 0 || index > arr.length) {
+            return arr;
+        } else {
+            arr.splice(index, 0, number)
+        }
+        return arr;
+    }
+    let index=5;
+    let number =10;
+    let arr=[3,4,6,58,3,34,23,3]
+   alert( insertNumberToArray(index,number,arr))
+</script>
+</body>
+</html>

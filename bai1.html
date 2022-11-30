@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<script>
+    let sum = 0;
+    let avg = 0;
+    let socer = [8, 6, 7, 8, 5, 7, 4, 8, 6, 9];
+
+    function findAvg(arr) {
+        for (let i = 0; i < arr.length; i++) {
+           sum += arr[i];
+        }
+        avg = sum / arr.length;
+return avg
+    }
+
+    document.write(findAvg(socer));
+</script>
+</body>
+</html>
